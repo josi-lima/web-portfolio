@@ -25,9 +25,29 @@ a {
     text-align: center;
 }
 
-#header-image {
+#banner-image01 {
     width: 100%;
     height: 100%;
+}
+
+.doll-image {
+    width: 20%;
+    height: 53%;
+    position: absolute;
+    left: 2vmin;
+    top: 16.5vmax;
+    animation: bounce 2s ease-in-out 0s infinite normal;
+    transform-origin: bottom;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1) translateY(0); }
+    50%  { transform: scale(1,1.15) translateY(-100px); }
+    100% { transform: scale(1,1) translateY(0); }
+}
+
+@media (max-width: 55rem) {    /* mobile format */
+    .doll-image { display: none; }    
 }
 
 .name-title {
