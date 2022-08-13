@@ -1,11 +1,50 @@
 /* General Settings */
 
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('SuperMario256.ttf');
+}
+
 body {
-    background-color: #BFE9FF;
+    background-color: #8BD2F0;
     margin: 0;
+}
+
+/* Patterns */
+
+a {
+    text-decoration: none;
+}
+
+/* Banner */
+
+.container01 {
+    position: relative;
+    text-align: center;
 }
 
 #header-image {
     width: 100%;
     height: 100%;
+}
+
+.name-title {
+    font: 3.9vmax 'Super Mario 256', cursive;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    white-space: nowrap;
+    color: #d30f3a;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    padding: 2.5vmin;
+    transform: translate(-50%, -50%);  
+    background: rgba(202, 243, 173, 0.49);
+    border-radius: 2rem;
+    border: 1px solid rgba(202, 243, 173, 0.432);
+    box-shadow: 0 4px 30px rgba(23, 250, 15, 0.260);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
 }
