@@ -87,6 +87,42 @@ a {
     .icon-box { display: none; } 
 }
 
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: var(--bg-color-blue);  
+    max-width: 100%;
+    max-height: 5.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.menu {
+    font: 1.6vmax 'Super Mario 256', cursive;  /* Super Mario 256: font downloaded */ 
+    list-style: none;
+    display: flex;
+    gap: 3vmax;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--bg-color-red-pinkish); 
+}
+
+.nav-link:hover{
+    transform: scale(1.2);
+    text-decoration: underline var(--bg-color-yellow);
+    color: #fff; 
+}
+
+.icon-lang {   /* Button to change the language of the website */
+    width: 12vmin;
+    height: 7vmin;
+}
+
 /* Banner */
 
 .container01 {
