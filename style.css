@@ -47,6 +47,45 @@ a {
     background: var(--bg-color-yellow);
 }
 
+/* Icon golden box */
+
+.icon-box {    /* Desktop only */
+    position: fixed;
+    right: 30px;
+    bottom: 25px;
+    width: 16vmin;
+    height: 16vmin;   
+    cursor: grab;
+}
+
+.icon-box:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+  
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-5px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(7px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-9px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(9px, 0, 0);
+    }
+}
+
+@media (max-width: 60rem) {    /* mobile format */
+    .icon-box { display: none; } 
+}
 
 /* Banner */
 
