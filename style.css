@@ -222,3 +222,102 @@ a {
      transform: scale(1.06);
 }
 
+/* Section: About me */
+
+#container02 {
+    max-width: 65vmax;
+    margin: 2vmax auto;
+    padding: 2vmax;
+    background-image: url('images/img03.jpg');
+    background-size: cover;
+    border-radius: 2rem;
+    border: solid var(--bg-color-yellow); 
+    color: #000;  
+    text-align: center;
+}
+
+#container03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-mushroom {
+    width: 14vmin;
+    height: 14vmin;
+    position: relative;
+    margin-right: -2vmax;
+    transform: rotate(-6deg);
+}
+
+.btn-red { 
+    font: 1.4rem 'Silkscreen', cursive;
+    line-height: 2rem;
+    font-weight: bold;
+    color: #fff;  
+    background-color: var(--bg-color-red-pinkish);
+    box-shadow: var(--box-shadow-light-gray);
+    display: inline-block;    
+    margin: 0;
+    padding: 2.8vmin 6vmin;
+    border-radius: 2rem;
+}
+
+.btn-red:hover {
+    transform: scale(1.06);
+}
+
+@media (min-width: 65rem) {  /* mobile format */
+    #container04 {          
+        display: grid;
+        grid-template-columns: 28vmax 28vmax;
+        grid-gap: 2.8vmax;    
+        margin: 2vmax;
+    }
+}
+
+.description01 {
+    line-height: 2rem;
+}
+
+.quote {
+    font: 1rem 'Silkscreen', cursive;
+    font-weight: bold;
+}
+
+.icon-coin01, .icon-coin02, .icon-coin03  { 
+    width: 14vmin;
+    height: 14vmin;
+}
+
+.icon-coin01 {
+    animation: bounce-coin 1.4s ease-in-out 0s infinite normal;
+}
+
+.icon-coin02 {
+    animation: bounce-coin 1.4s ease-in-out 2s infinite normal;
+}
+
+.icon-coin03 {
+    animation: bounce-coin 1.4s ease-in-out 5s infinite normal;
+}
+
+@keyframes bounce-coin {
+    0%   { transform: scale(1,1) translateY(0); }
+    50%  { transform: scale(1,1) translateY(-4vmin); }
+    100% { transform: scale(1,1) translateY(0); }
+}
+
+.personal-photo{
+    width: 75%;
+    height: 88%;
+    border-radius: 3%;
+    margin-top: 2.2vmin;
+    box-shadow: var(--box-shadow-gray);
+    transform: rotate(3deg);
+}
+
+.personal-photo:hover {
+    transform: scale(1.08);
+}
+
