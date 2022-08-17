@@ -204,3 +204,21 @@ a {
     to { left: 55%; }
 }
 
+/* Yellow button */
+
+.btn-yellow {
+    font: 2vmax 'Silkscreen', cursive;
+    font-weight: bold;
+    color: #fff;  
+    background-color: var(--bg-color-yellow);
+    box-shadow: var(--box-shadow-light-gray);
+    display: inline-block;    
+    margin: -5vmax 0 2vmax 0;
+    padding: 2.2vmin 3.6vmin;
+    border-radius: 2rem;
+}
+
+.btn-yellow:hover {
+     transform: scale(1.06);
+}
+
