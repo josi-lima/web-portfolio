@@ -123,9 +123,26 @@ a {
     height: 7vmin;
 }
 
+/* Transition banner-entrance */
+
+@keyframes circle-in-hesitate {
+    0% {
+      clip-path: circle(0%);
+    }
+    25% {
+      clip-path: circle(25%);
+    }
+    100% {
+      clip-path: circle(125%); }
+}
+
+[transition-style="in:circle:hesitate"] {
+    animation: circle-in-hesitate 3s cubic-bezier(.25, 1, .30, 1) .5s both;
+}
+
 /* Banner */
 
-.container01 {
+#container01 {
     position: relative;
     text-align: center;
 }
@@ -140,43 +157,45 @@ a {
 }
 
 .doll-image {
-    width: 20%;
-    height: 53%;
+    width: 18%;
+    height: 50%;
     position: absolute;
     left: 2vmin;
-    top: 16.5vmax;
+    top: 20.7vmax;
     animation: bounce 2s ease-in-out 0s infinite normal;
     transform-origin: bottom;
 }
 
-@keyframes bounce {
+@keyframes bounce {   /* visible on desktop format only */
     0%   { transform: scale(1,1) translateY(0); }
     50%  { transform: scale(1,1.15) translateY(-100px); }
     100% { transform: scale(1,1) translateY(0); }
 }
 
 @media (max-width: 60rem) {    /* mobile format */
-    .doll-image { display: none; }    
-    #banner-image01 { display: none; }  
+    .doll-image { display: none; }
+    #banner-image01 { display: none; }    
 }
 
 .name-title {
-    font: 3.8vmax 'Super Mario 256', cursive;
+    font: 3.7vmax 'Super Mario 256', cursive;  /* Super Mario 256: font downloaded */
     font-weight: bold;
     letter-spacing: .2rem;
     white-space: nowrap;
-    color: #d30f3a;
+    color: var(--bg-color-red-pinkish);
     position: absolute;
-    top: 74%;
+    top: 65%;
     left: 50%;
-    padding: 2.5vmin 4vmin;
     transform: translate(-50%, -50%);  
+    /* Button glass effect */
+    padding: 2.5vmin 4vmin;
     background: rgba(202, 243, 173, 0.49);
     border-radius: 2rem;
     border: 1px solid rgba(202, 243, 173, 0.432);
     box-shadow: 0 4px 30px rgba(23, 250, 15, 0.260);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px); 
+    /* Animation */
     animation: back-and-forth .7s ease-in-out infinite alternate;
 }   
 
@@ -184,3 +203,4 @@ a {
     from { left: 50%; }
     to { left: 55%; }
 }
+
