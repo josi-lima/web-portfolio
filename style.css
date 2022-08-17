@@ -1,6 +1,7 @@
 /* General Settings */
 
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Silkscreen&display=swap');
+/* Fonts: Josefin Sans, Silkscreen */
 
 @font-face {
     font-family: 'Super Mario 256';
@@ -8,8 +9,10 @@
 }
 
 body {
-    background-color: #8BD2F0;
+    background-color: var(--bg-color-light-blue);
     margin: 0;
+    font: 1.3rem 'Josefin Sans', sans-serif;
+    color: #000;
 }
 
 /* Patterns */
