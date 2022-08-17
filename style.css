@@ -387,4 +387,63 @@ a {
     transform: scale(1.2);
 }
 
+/* Section: Projects */
+
+#container07 {
+    max-width: 57vmax;
+    margin: 2vmax auto;
+    padding: 2vmax;
+    background-image: url('images/img03.jpg');
+    border-radius: 2rem;
+    border: solid var(--bg-color-yellow); 
+    color: #000;  
+    text-align: center;
+}
+
+#container08 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-title {
+    width: 17vmin;
+    height: 17vmin;
+    position: relative;
+    margin-right: -2vmax;
+    transform: rotate(-6deg);
+}
+
+.description02 {
+    color: var(--bg-color-yellow);
+    font-weight: bold;
+}
+
+#container09 {
+    margin-bottom: 3vmax;
+}
+
+.img-proj {
+    max-width: 55%;
+    max-height: 55%;
+    margin: 2.2vmax;
+}
+
+.img-proj:hover {
+    transform: scale(1.09);
+}
+
+.description03 {
+    font-size: 2.5vmin;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #FFB400;
+    border-radius: .7rem;
+    margin: -2vmax auto 2vmax;
+    padding: 1vmin;
+    width: 32%;
+}
+
+
+
 
