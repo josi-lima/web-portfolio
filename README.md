@@ -1,6 +1,6 @@
 # Web Portfolio 🎨
 
-⚡<strong>[ HTML / CSS / JavaScript ]</strong> --- https://josi-lima.github.io/web-portfolio/
+⚡<strong>[ CSS / HTML / JavaScript ]</strong> --- https://josi-lima.github.io/web-portfolio/
 
 <br>
 
