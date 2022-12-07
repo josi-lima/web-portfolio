@@ -89,7 +89,7 @@ a {
 
 /* Navigation Bar */
 
-#nav-bar {
+#navbar {
     background-color: var(--bg-color-blue);  
     max-width: 100%;
     max-height: 5.5vmax;
